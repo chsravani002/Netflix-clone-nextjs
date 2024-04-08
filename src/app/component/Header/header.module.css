@@ -1,0 +1,54 @@
+.header_block {
+    padding-top: 22px;
+    padding-left: 15%;
+}
+
+.netflix_logo {
+    width: 100%;
+    fill: red;
+}
+
+.netflix_logo_container {
+    width: 15%;
+    height: 38px;
+}
+
+
+.select_block_container {
+    border: 1px solid grey;
+    width: 120px;
+    margin-left: 70%;
+    margin-top: -34px;
+    border-radius: 6px;
+}
+
+.select_block_padding {
+    padding: 1px 0 1px 0;
+}
+
+.select_options {
+    padding: 1px 0 1px 0;
+    margin-left: 37px;
+    border: none;
+    background: none;
+    color: white;
+}
+.signin_btn {
+    width: 20%;
+    border-radius: 7px;
+    background-color: red;
+    border: red;
+    height: 32px;
+    color: white;
+}
+
+
+.signin_button_container {
+    width: 70px;
+    margin-left: 82%;
+    margin-top: -30px;
+    font-size: 12px;
+}
+.sigin {
+    width: 100%;
+}

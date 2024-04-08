@@ -1,0 +1,42 @@
+.main_container {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.container {
+    width: 33%;
+    height: 307px;
+    color: white;
+    margin-left: 18%;
+    margin-top: 140px;
+    padding-top: 87px;
+}
+
+.header1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.paragraph_text {
+    font-size: 20px;
+}
+.img_container {
+    width: 32%;
+    height: 307px;
+    margin-right: 18%;
+    margin-top: 140px;
+}
+
+.img {
+    width: 100%;
+}
+
+.video {
+    display: block;
+    position: relative;
+    bottom: 90%;
+    left: 53px;
+    width: 121%;
+}
