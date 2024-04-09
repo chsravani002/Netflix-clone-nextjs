@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic List with Delete Button Example</title>
+</head>
+<body>
+    <input type="text" id="inputField" placeholder="Enter item">
+    <button onclick="addItem()">Add Item</button>
+    <ul id="itemList"></ul>
+
+    <script>
+        function addItem() {
+            const inputField = document.getElementById('inputField');
+            const item = inputField.value.trim();
+
+            if (item === '') {
+                alert('Please enter an item.');
+                return;
+            }
+
+            const itemList = document.getElementById('itemList');
+            const li = document.createElement('li');
+            li.textContent = item;
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.onclick = function() {
+                itemList.removeChild(li);
+            };
+
+            li.appendChild(deleteButton);
+            itemList.appendChild(li);
+
+            inputField.value = '';
+        }
+    </script>
+</body>
+</html>

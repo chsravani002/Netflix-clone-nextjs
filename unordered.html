@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="data" name="inputdata">
+    <button id="btn">add</button>
+    <button id="update">update</button>
+    <p id="para"></p>
+    <script>
+        const array = ["tea", "milk", "coffe"]
+        const list = document.createElement("ul");
+
+        for (let i = 0; i < array.length; i++) {
+            listitems = document.createElement("li");
+            listitems.innerHTML = array[i] + '<button onclick="askConfirmation(event)">delete</button>' + " " + '<button onclick="editbtn(event)">edit</button>'
+            list.appendChild(listitems)
+        }
+        document.body.appendChild(list)
+        function askConfirmation(event) {
+            const yes = window.confirm("confirm to delete");
+            if (yes) {
+                list.removeChild(event.target.parentElement);
+            }
+        }
+
+
+        document.getElementById("btn").addEventListener("click", myfun)
+        function myfun() {
+            const input = document.getElementById("data").value;
+            const newarray = Array.from(list.childNodes);
+            const child = newarray.map((x) => x.childNodes[0].nodeValue)
+
+            if (child.includes(input)) {
+                window.alert("already exist");
+            } else {
+                listitems = document.createElement("li");
+                listitems.innerHTML = input + '<button onclick="askConfirmation(event)">delete</button>' + " " + '<button onclick="editbtn">edit</button>'
+                list.appendChild(listitems);
+                document.body.appendChild(list);
+                document.getElementById("data").value = ''
+            }
+
+        }
+        let x = null;
+        function editbtn(event) {
+            x=event.target.parentElement;
+            const val = x.childNodes[0].nodeValue;
+            document.getElementById("data").value = val;
+        }
+
+        document.getElementById("update").addEventListener("click", updatefun)
+        function updatefun() {
+            const input = document.getElementById("data").value;
+            const n = document.createTextNode(input);
+            x.replaceChild(n,x.childNodes[0]);
+            document.getElementById("data").value = ''
+        }
+
+
+    </script>
+</body>
+
+</html>

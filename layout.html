@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        layout
+    </title>
+    <style>
+        * {
+            box-shadow: #E7E9EB;
+            box-sizing: border-box;
+        }
+        div{
+            border:2px solid whitesmoke;
+        }
+
+        .d,
+        .b,
+        .a {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            font-size: large;
+            background-color: #E7E9EB;
+            padding: 40px;
+            margin: 10px;
+        }
+
+        .c {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            background-color: #E7E9EB;
+        }
+
+        .c div{
+            display:inline-block;
+            height:200px;
+            border-right:10px solid whitesmoke;
+        }
+
+        .content-items {
+            border-left: 10px solid whitesmoke;
+        }
+
+        .e div{
+            display: inline-block;
+            height:200px;
+            width: 10%;
+            line-height: 200px;
+            margin: 0;
+            /* margin: 0 5px 0 0; */
+            background: #E7E9EB;
+        }
+        .e {
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        .e div:nth-child(2) {
+            width: 80%;
+        }
+
+        .e > *{
+            vertical-align: middle;
+        }
+        
+       
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="a">Header</div>
+        <div class="b">Navigation Menu</div>
+
+        <div class="e">
+            <div>Content</div><div>Maincontent </div><div>Content</div>
+        </div>
+        <div class="d">Footer</div>
+    </div>
+</body>
+
+</html>
