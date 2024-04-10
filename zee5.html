@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zee5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="zee5.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            --app-primary-btn-bg: rgb(179, 123, 231);
+        }
+
+        .form-block {
+            height: 550px;
+            border: 1px solid white;
+            border-radius: 24px;
+            margin: 20px 0 30px 0;
+        }
+
+        .form-header,
+        .form-paragraph {
+            text-align: center;
+            padding: 0px 45px 15px 45px;
+        }
+
+        .label-design {
+            border: 2px solid black;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin-top: 50px;
+        }
+
+        .circle {
+            --app-circle-size: 30px;
+            border: 1px solid black;
+            height: var(--app-circle-size);
+            width: var(--app-circle-size);
+            border-radius: 50%;
+            background-color: #f9f9f9;
+            border: 1px solid #cdcdcd;
+            text-align: center;
+        }
+        .form-block_or_container {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                bottom: 32px;
+                left: 152px;
+                background-color: white;
+            }
+    
+
+        .form-control {
+            padding: 10px 10px 10px 20px;
+        }
+
+        .form_paragraph {
+            margin: 20px 40px 2px 40px;
+            text-align: center;
+        }
+
+        .form-block_email {
+            margin: 0px 40px 2px 40px;
+        }
+
+        .btn {
+            background-color: var(--app-primary-btn-bg);
+            width: 80%;
+            margin: 40px 40px 2px 40px;
+
+        }
+
+        .btn:hover {
+            background-color: var(--app-primary-btn-bg);
+            cursor: not-allowed;
+        }
+
+        .flex-data:hover,
+        span:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center dark">
+            <div class="col-12 col-lg-4">
+                <div class="form-block bg-white">
+                    <h3 class="form-header pt-5 text-dark"> <b>Login to ZEE5</b></h3>
+                    <div>
+                        <p class="form-paragraph  mb-4 text-dark">Login to continue enjoying uninterrupted video and
+                            personalised
+                            experience.</p>
+                    </div>
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="#" class="flex-data">
+                            <svg width="52" height="54" padding-top="2" margin-top="2" viewBox="0 0 52 54" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_dd_1157_3449)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M26 2C12.7452 2 2 12.7452 2 26V26C2 39.2548 12.7452 50 26 50V50C39.2548 50 50 39.2548 50 26V26C50 12.7452 39.2548 2 26 2V2Z"
+                                        fill="white" />
+                                </g>
+                                <path
+                                    d="M35.1511 26.1795C35.1511 25.3929 35.0873 24.8189 34.9492 24.2236H25.9668V27.774H31.2392C31.133 28.6563 30.559 29.9851 29.2833 30.878L29.2655 30.9968L32.1055 33.197L32.3023 33.2166C34.1094 31.5477 35.1511 29.0922 35.1511 26.1795Z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M25.9665 35.5342C28.5495 35.5342 30.718 34.6838 32.302 33.2169L29.283 30.8782C28.4752 31.4416 27.3909 31.8349 25.9665 31.8349C23.4366 31.8349 21.2893 30.1661 20.5239 27.8594L20.4117 27.8689L17.4585 30.1544L17.4199 30.2617C18.9931 33.3869 22.2247 35.5342 25.9665 35.5342Z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M20.5248 27.8592C20.3228 27.264 20.2059 26.6261 20.2059 25.9671C20.2059 25.308 20.3228 24.6702 20.5142 24.0749L20.5088 23.9482L17.5187 21.626L17.4208 21.6725C16.7724 22.9694 16.4004 24.4257 16.4004 25.9671C16.4004 27.5084 16.7724 28.9647 17.4208 30.2616L20.5248 27.8592Z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M25.9665 20.0996C27.7629 20.0996 28.9747 20.8756 29.6657 21.5241L32.3657 18.8878C30.7075 17.3465 28.5495 16.4004 25.9665 16.4004C22.2247 16.4004 18.9931 18.5476 17.4199 21.6728L20.5132 24.0753C21.2893 21.7685 23.4366 20.0996 25.9665 20.0996Z"
+                                    fill="#EB4335" />
+                                <defs>
+                                    <filter id="filter0_dd_1157_3449" x="0" y="0" width="52" height="54"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="2" />
+                                        <feGaussianBlur stdDeviation="1" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_1157_3449" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset />
+                                        <feGaussianBlur stdDeviation="1" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_1157_3449"
+                                            result="effect2_dropShadow_1157_3449" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1157_3449"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" class="flex-data">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 40 40">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#1877F2"
+                                        d="M20 0C8.954 0 0 8.954 0 20c0 9.983 7.314 18.257 16.875 19.757V25.781h-5.078V20h5.078v-4.406c0-5.013 2.986-7.781 7.554-7.781 2.188 0 4.477.39 4.477.39v4.922h-2.522c-2.484 0-3.259 1.542-3.259 3.123V20h5.547l-.887 5.781h-4.66v13.976C32.686 38.257 40 29.983 40 20 40 8.954 31.046 0 20 0z" />
+                                    <path fill="#FFF"
+                                        d="M28.672 20h-5.547v-3.752c0-1.581.775-3.123 3.26-3.123h2.521V8.203s-2.289-.39-4.477-.39c-4.568 0-7.554 2.768-7.554 7.78V20h-5.078v5.781h5.078v13.976a20.15 20.15 0 0 0 6.25 0V25.781h4.66L28.672 20z" />
+                                </g>
+                            </svg>
+
+                        </a>
+                        <a href="#" class="flex-data">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 40 40">
+                                <g fill="none" fill-rule="nonzero">
+                                    <circle cx="20" cy="20" r="20" fill="#1DA1F2" />
+                                    <path fill="#FFF"
+                                        d="M16.34 30.55c8.87 0 13.72-7.35 13.72-13.72 0-.21 0-.42-.01-.62.94-.68 1.76-1.53 2.41-2.5-.86.38-1.79.64-2.77.76 1-.6 1.76-1.54 2.12-2.67-.93.55-1.96.95-3.06 1.17a4.799 4.799 0 0 0-3.52-1.52c-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.1a13.68 13.68 0 0 1-9.94-5.04c-.41.71-.65 1.54-.65 2.42a4.8 4.8 0 0 0 2.15 4.01c-.79-.02-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.28 3.87 4.73a4.807 4.807 0 0 1-2.18.08 4.815 4.815 0 0 0 4.5 3.35 9.693 9.693 0 0 1-7.14 1.99c2.11 1.38 4.65 2.18 7.37 2.18" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#" class="flex-data">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="48" height="48" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_1157_3445" transform="scale(0.00390625)" />
+                                    </pattern>
+                                    <image id="image0_1157_3445" width="256" height="256"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="form-block_or">
+                        <hr>
+                        <div class="form-block_or_container">
+                            <div class="circle">
+                                or
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-block_email ">
+                        <input type="text" id="fname" class="form-control " placeholder="Email or mobile number">
+                    </div>
+
+                    <div class="form-block_login">
+                        <button type="button" class="btn text-white"><b>Login</b></button>
+                    </div>
+                    <div>
+                        <p class="form_paragraph">New to ZEE5 ? <a href="#"
+                                style="color: rgb(179, 123, 231); text-decoration: none;">Register</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

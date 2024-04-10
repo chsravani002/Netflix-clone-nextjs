@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="data" name="inputdata">
+    <p id="error" style="color: red;"></p>
+    <button id="btn">add</button>
+    <script>
+        const array = ["tea", "coffe", "milk"];
+        // Create List
+        const list = document.createElement("ol");
+        var li;
+        function askConfirmation(event) {
+            const yes = window.confirm("confirm to delete");
+            console.log(event)
+            if (yes) {
+                list.removeChild(event.target.parentElement);
+            }
+        } 
+
+        const createListElement = function (text = '') {
+            if(text.length === 0) {
+                return;
+            }
+
+            li = document.createElement("li");
+            li.innerHTML = text + ' ' + '<button onclick="askConfirmation(event)">Delete</button>';
+            return li;
+        }
+
+
+        document.getElementById("btn").addEventListener("click",myfun) 
+        function myfun () {
+            const input=document.getElementById("data").value;
+            const data = Array.from(list.childNodes).map((x) => x.childNodes[0].nodeValue.trim());
+            if(!data.includes(input)) {
+                document.getElementById('error').innerText = '';
+                const element = createListElement(input)
+                list.appendChild(element)
+                document.getElementById("data").value = '';
+            } else {
+                document.getElementById('error').innerText = 'You are trying to enter repetetive elements';
+            }
+            // list.childNodes.map((x) => console.log(x.value))
+        }
+
+
+        // Prepare list items
+        const items = array.map((x) => {
+            return createListElement(x);
+        });
+
+        // Append list
+        list.append(...items);
+        document.body.appendChild(list);
+
+  
+    </script>
+
+</body>
+
+</html>

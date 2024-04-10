@@ -1,0 +1,438 @@
+2<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            height: auto;
+            border: none;
+            background-image: url("netflix.jpg.jpg ");
+            width: 100%px;
+            background-color: rgba(0, 0, 0, 0.6);
+
+        }
+
+
+        .form-block {
+            width: 418px;
+            height: 700px;
+            border: 1px solid black;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 23px 73px 0 73px;
+        }
+
+        .form-block_header {
+            font-size: 35px;
+            color: white;
+        }
+
+        #fname,
+        #lname {
+            width: 100%;
+            height: 50px;
+            padding-left: 21px;
+            border-radius: 6px;
+            border: 1px solid white;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        #sign-in_button,
+        #button {
+            width: 100%;
+            height: 45px;
+            text-align: center;
+            border-color: rgba(0, 0, 0, 0);
+            border-width: 0.0625rem;
+            border-radius: 0.1875rem;
+            cursor: pointer;
+            color: white;
+            font-size: 15px;
+        }
+
+        #button {
+            background-color: red;
+        }
+
+        #sign-in_button {
+            background-color: rgb(255, 255, 255, 0.2);
+        }
+
+        #content:hover {
+            cursor: pointer;
+        }
+
+        .image {
+            width: 9.25rem;
+            height: 2.5rem;
+            fill: red;
+            margin-left: 80px;
+            padding-top: 35px;
+        }
+
+        .content {
+            color: white;
+            text-align: center;
+        }
+
+        .netflix-links {
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+        .forgot-password_link {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .labelcontent {
+            color: white;
+        }
+
+        .form-block_email {
+            margin-top: 39px;
+            margin-bottom: 17px;
+        }
+
+        .form-block_password {
+            margin-bottom: 17px;
+        }
+
+        .form-remember-me_checkbox {
+            width: 100%;
+            height: 35px;
+            margin-top: 25px;
+        }
+
+        .header1 {
+            color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            height: 26px;
+        }
+
+        .span-text:hover,
+        .finalbox:hover,
+        .netflix-links:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .finalcontent {
+            color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            font-size: 11px;
+            word-spacing: 5px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            height: auto;
+            padding: 10px 100px 50px 100px;
+            margin-top: 20px;
+        }
+
+        .footer-block {
+
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            color: white;
+
+        }
+
+        .footer-block_content {
+            padding: 20px 0px 20px 0px;
+            width: 25%;
+            text-decoration: underline;
+        }
+
+        .footer-block_content:hover {
+            cursor: pointer;
+        }
+
+        .footer-container_paragraph {
+            cursor: text;
+            color: white;
+        }
+
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 65px;
+        }
+
+        .sign-up_link {
+            color: white;
+
+        }
+
+        .form-block_data {
+            color: white;
+            text-align: center;
+        }
+
+        .language-form {
+            padding: 4px 10px 4px 20px;
+        }
+
+
+        #lang {
+            color: white;
+            background-color: black;
+            border: none;
+        }
+
+        .language-block {
+            color: white;
+            width: 100%;
+            height: auto;
+        }
+
+        .inner-language_block {
+            height: auto;
+            border: 1px solid white;
+            padding-inline: .8rem;
+            display: inline-block;
+            border-radius: 3px;
+            padding-block: .3rem;
+
+        }
+
+
+        @media only screen and (min-width:312px) and (max-width:600px) {
+            .container {
+                background-image: none;
+                ;
+                background-color: black;
+            }
+
+            .footer-block_content {
+
+                width: 50%;
+            }
+
+            .footer-block {
+
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                color: white;
+
+            }
+
+            #content:hover {
+                cursor: pointer;
+            }
+
+            .span-text:hover,
+            .finalbox:hover,
+            .netflix-links:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .form-block {
+                width: 100%;
+                padding: 0px 23px 0 23px;
+            }
+
+            #lang {
+                color: white;
+                background-color: black;
+                border: none;
+            }
+
+            .inner-language_block {
+                width: 100px;
+                border: 1px solid white;
+                padding: 3px;
+                height: auto;
+            }
+
+            footer {
+                background-color: rgba(0, 0, 0, 0.8);
+                height: auto;
+                padding: 10px 35px 50px 35px;
+                margin-top: 20px;
+            }
+
+            .image {
+                width: 8.25rem;
+                margin-left: 33px;
+            }
+
+            .form-block_data {
+                color: white;
+                text-align: center;
+            }
+
+            .container {
+                background-image: url("netflix.jpg.jpg ");
+            }
+
+        }
+
+        @media (max-width:312px) {
+            .container {
+                background-image: none;
+
+                background-color: black;
+            }
+
+            .footer-block_content {
+
+                width: 91%;
+                padding-top: 0px;
+            }
+
+            .footer-container_paragraph {
+                cursor: text;
+                color: white;
+                padding-top: 25px;
+            }
+
+            footer {
+                padding: 10px 20px 50px 20px;
+                border-top: 2px solid white;
+                padding-bottom: 50px;
+            }
+
+            .form-block {
+
+                width: 100%;
+                padding: 0px 23px 0 23px;
+            }
+
+            .image {
+                width: 8.25rem;
+                margin-left: 33px;
+            }
+
+            .language-form {
+                margin-left: 80px;
+            }
+
+            #content:hover {
+                cursor: pointer;
+            }
+
+            .span-text:hover,
+            .finalbox:hover,
+            .netflix-links:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="image">
+            <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                class="default-ltr-cache-1d568uk ev1dnif2">
+                <g>
+                    <path
+                        d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                    </path>
+                </g>
+            </svg>
+        </header>
+
+        <div class="form-container">
+            <div class="form-block">
+                <form action="/action_page.php">
+                    <h1 class="form-block_header">sign In</h1>
+                    <div class="form-block_email">
+                        <input type="text" id="fname" name="fname" placeholder="email or phonenumber"><br>
+                    </div>
+                    <div class="form-block_password">
+                        <input type="text" id="lname" name="lname" placeholder="password">
+                    </div>
+                    <div class="form-block_submit">
+                        <input type="submit" id="button" value="Sign In">
+                    </div>
+                    <div class="form-block_OR">
+                        <h3 class="form-block_data">OR</h3>
+                    </div>
+                    <div class="form-block_button">
+                        <input type="submit" id="sign-in_button" value="Use a sign-in code">
+                    </div>
+                    <div class="forgot-password_link">
+                        <a href="#" class="netflix-links">Forget password?</a>
+                    </div>
+
+                    <div class="form-remember-me_checkbox">
+                        <input type="checkbox" id="content" name="content">
+                        <label class="labelcontent" for="content">Remember me</label>
+
+                        <p class="sign-up_link">New to Netflix? <a href="#" class="netflix-links">Sign up
+                                now.</a></p>
+
+                        <p class="finalcontent">This page is protected by Google reCAPTCHA to ensure you're not a
+                            bot.<a class="finalbox" style="color:blue"> Learnmore.</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer-container">
+
+            <p class="footer-container_paragraph">Questions?Call <span class="span-text">000-800-919-1694</span></p>
+
+            <div class="footer-block">
+                <div class="footer-block_content">FAQ</div>
+                <div class="footer-block_content"> Help Centre</div>
+                <div class="footer-block_content"> Terms of Use</div>
+                <div class="footer-block_content"> Privacy</div>
+                <div class="footer-block_content" id="ls"> Cookie Preferences</div>
+                <div class="footer-block_content" id="ls"> Corporate Information</div>
+            </div>
+            <div class="language-block">
+                <div class="inner-language_block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-translate"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+                    </svg>
+                    <select name="language" id="lang">
+                        <option value="english">English</option>
+                        <option value="hindi">हिंदी</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
