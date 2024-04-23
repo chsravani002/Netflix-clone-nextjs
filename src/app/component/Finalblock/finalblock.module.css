@@ -1,0 +1,41 @@
+.firstblock {
+    width: 100%;
+    display: flex;
+}
+
+.innerdiv {
+   
+    background-color: black;
+    padding:72px 15% 72px 15%;
+}
+
+.listitems {
+    list-style-type: none;
+    width: 25%;
+    padding-bottom: 1%;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.atag {
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.languageblock {
+    border: 1px solid grey;
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px 4px 12px;
+    border-radius: 3px;
+    margin: 10px 0 16px 0;
+}
+.selectoption{
+    background-color: black;
+    color:white;
+    border:none;
+}
+.para{
+    font-size: 0.875rem;
+    font-weight: 400;
+}

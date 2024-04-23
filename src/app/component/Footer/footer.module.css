@@ -1,0 +1,49 @@
+.header {
+    padding: 0 13% 0 13%;
+    margin: 5px 0 3px 0;
+}
+
+.btn {
+    width: 100%;
+    text-align: left;
+    padding: 2%;
+    font-size: 23px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(68, 62, 62, 0.8);
+}
+
+.paragraph {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 30px 0 20px 0;
+}
+
+.inputform {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid grey;
+    color: white;
+    padding: 14px 0 14px 17px;
+    width: 30%;
+    border-radius: 4px;
+}
+
+.getstartbtn {
+    width: 16%;
+    border-radius: 4px;
+    background: rgb(193, 17, 25);
+    color: white;
+    border: 1px solid red;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.selectoption{
+    background-color: black;
+    color:white;
+}
+.borderstyle{
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(35,35,35);
+}

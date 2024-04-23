@@ -1,0 +1,8 @@
+.videostyle {
+    position: relative;
+    height: 175px;
+    z-index: -1;
+    bottom: 80%;
+    left: 9%;
+    width: 81%;
+}

@@ -1,9 +1,10 @@
 import { Content } from "next/font/google";
 import styles from "./Banner.module.css";
 import Header from "../Header/Header";
-
+import Border from "../Border/Border";
 export default function Banner() {
   return (
+    <>
     <div className={styles.background_image}>
       <Header></Header>
       <div className={styles.h1_container}>
@@ -21,6 +22,9 @@ export default function Banner() {
         <input type="email" className={styles.email_form} id="email" placeholder="Email address"></input>
         <button type="button" className={styles.get_started_btn}><b>Get Started </b></button>
       </div>
+      
     </div>
+    <Border></Border>
+    </>
   );
 }
